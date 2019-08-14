@@ -1,26 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//import GitCards from './components/git-cards';
+import GitCards from './components/git-cards-func';
+
+class App extends React.Component {
+  render () {
+    return <GitCards 
+      title="GitHub cards App" 
+      emptyMessage="There are not cards at the moment. Search for one to get started" />;
+  }
 }
 
 export default App;
